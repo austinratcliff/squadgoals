@@ -1,0 +1,29 @@
+.Content {
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: calc(100vh - 100px);
+  width: 70%;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.Content .name {
+  color: #91A8D0;
+  font-family: 'Yeezy';
+  font-size: 5vw;
+  letter-spacing: 0.5em;
+  width: 33%;
+  margin: 0;
+}
+
+.Content .description {
+  color: #707070;
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1.5em;
+  width: 33%;
+}
