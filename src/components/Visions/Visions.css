@@ -1,0 +1,17 @@
+/* TODO: Add styles and transitions for vision history */
+.Visions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+  padding: 25px 0;
+}
+
+.Visions .header {
+  color: #91A8D0;
+  font-family: 'Yeezy';
+  font-size: 2vw;
+  margin: 0;
+}

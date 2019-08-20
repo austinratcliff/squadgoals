@@ -16,3 +16,7 @@
   font-size: 2vw;
   margin: 25px 0 0 0;
 }
+
+.slide-right {
+  transform: translate(100%);
+}

@@ -1,0 +1,28 @@
+/* TODO: Add styles and transitions for vision history */
+.Vision {
+  border-top: 5px solid #91A8D0;
+  border-bottom: 5px solid #91A8D0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin-top: 25px;
+  padding: 25px 0;
+}
+
+.Vision .timeframe {
+  color: #C8D3E7;
+  border-bottom: 5px solid #C8D3E7;
+  font-family: 'Yeezy';
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.Vision .statement {
+  color: #707070;
+  font-size: 1vw;
+  font-weight: bold;
+  margin: 15px 0 0 0;
+}

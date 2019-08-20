@@ -1,0 +1,36 @@
+.Member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 25px;
+}
+
+.Member:last-child {
+  margin-bottom: 25px;
+}
+
+.Member .image {
+  background-color: white;
+  background-image: url('../../../assets/images/tyle.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.Member .name {
+  color: #C8D3E7;
+  font-family: 'Yeezy';
+  font-size: 1.5vw;
+  margin: 0 0 0 10px;
+  cursor: pointer;
+}
+
+.Member .name:hover {
+  color: #91A8D0;
+}

@@ -27,3 +27,8 @@
   line-height: 1.5em;
   width: 33%;
 }
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}

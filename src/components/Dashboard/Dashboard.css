@@ -1,0 +1,22 @@
+/* TODO: Add styles and transitions for tabs */
+.Dashboard {
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: calc(100vh - 100px);
+  width: 70%;
+  overflow: scroll;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}

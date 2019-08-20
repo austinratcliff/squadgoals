@@ -1,0 +1,13 @@
+.Squad {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 33%;
+}
+
+.Squad .header {
+  color: #91A8D0;
+  font-family: 'Yeezy';
+  font-size: 2vw;
+  margin: 25px 0 0 0;
+}

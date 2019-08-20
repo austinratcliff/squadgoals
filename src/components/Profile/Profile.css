@@ -1,0 +1,75 @@
+.Profile {
+  background-color: #C8D3E7;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 100px);
+  width: 30%;
+  transition: transform 0.5s;
+}
+
+.Profile .image {
+  background-color: white;
+  background-image: url('../../assets/images/austin.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid white;
+  border-radius: 100%;
+  height: 240px;
+  width: 240px;
+  margin-top: 25px;
+}
+
+.Profile .name {
+  color: #91A8D0;
+  font-family: 'Yeezy';
+  font-size: 3vw;
+  margin: 25px 0 0 0;
+}
+
+.Profile .header {
+  color: white;
+  border-bottom: 5px solid #91A8D0;
+  font-family: 'Yeezy';
+  font-size: 2vw;
+  margin: 25px 0 0 0;
+  padding: 0 10px;
+}
+
+.Profile .email,
+.Profile .phone {
+  color: #707070;
+  font-size: 1vw;
+  font-weight: bold;
+  margin: 15px 0 0 0;
+}
+
+.Profile button {
+  color: #ACBEDC;
+  background-color: white;
+  border: 5px solid #ACBEDC;
+  border-radius: 50px;
+  font-family: 'Yeezy';
+  font-size: 1vw;
+  font-weight: bold;
+  height: 50px;
+  width: 30%;
+  margin: 50px 0 0 0;
+  cursor: pointer;
+}
+
+.Profile button:hover {
+  color: white;
+  background-color: #ACBEDC;
+  border: 5px solid white;
+}
+
+.Profile button:focus {
+  outline: none;
+}
+
+.slide-left {
+  transform: translate(-100%);
+}

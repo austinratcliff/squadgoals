@@ -1,0 +1,51 @@
+.Project {
+  background-color: white;
+  border: 5px solid #C8D3E7;
+  box-shadow: 5px 5px 0 #91A8D0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 25px;
+  padding: 25px 0;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.Project:hover {
+  transform: translate(0, -5px);
+}
+
+.Project:last-child {
+  margin-bottom: 25px;
+}
+
+.Project .name {
+  color: #C8D3E7;
+  font-family: 'Yeezy';
+  font-size: 1.5vw;
+  margin: 0 0 10px 0;
+}
+
+.Project .description {
+  color: #707070;
+  font-size: 1vw;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.Project .member {
+  color: #707070;
+  font-size: 1vw;
+  font-weight: bold;
+  margin: 0;
+}
+
+.Project .member span {
+  color: #91A8D0;
+}
+
+.Project .member span:hover {
+  color: #C8D3E7;
+}
