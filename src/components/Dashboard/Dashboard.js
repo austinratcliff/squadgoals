@@ -3,13 +3,13 @@ import Visions from '../Visions/Visions'
 import Goals from '../Goals/Goals'
 import Projects from '../Projects/Projects'
 import Squad from '../Squad/Squad'
-import './Dashboard.css'
+import styles from './Dashboard.module.css'
 
 const dashboard = props => {
   return (
-    <div className="Dashboard">
+    <div className={styles.Dashboard}>
       <Visions visions={props.visions} />
-      <div className="tabs">
+      <div className={styles.tabs}>
         <Goals goals={props.goals} />
         <Projects projects={props.projects} />
         <Squad squad={props.squad} />

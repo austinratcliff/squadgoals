@@ -1,17 +1,17 @@
 import React from 'react'
-import './Profile.css'
+import styles from './Profile.module.css'
 
 const profile = props => {
   return (
-    <div className="Profile">
+    <div className={styles.Profile}>
       {/* TODO: Change to user image from API DB for production */}
-      <div className="image"></div>
-      <h1 className="name">{props.user.name}</h1>
-      <h2 className="header">Email</h2>
-      <p className="email">{props.user.email}</p>
-      <h2 className="header">Phone</h2>
-      <p className="phone">{props.user.phone}</p>
-      <button className="edit">Edit</button>
+      <div className={styles.image}></div>
+      <h1 className={styles.name}>{props.user.name}</h1>
+      <h2 className={styles.header}>Email</h2>
+      <p className={styles.email}>{props.user.email}</p>
+      <h2 className={styles.header}>Phone</h2>
+      <p className={styles.phone}>{props.user.phone}</p>
+      <button className={styles.edit}>Edit</button>
     </div>
   )
 }

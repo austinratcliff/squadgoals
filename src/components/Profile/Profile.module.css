@@ -8,7 +8,7 @@
   width: 30%;
 }
 
-.Profile .image {
+.image {
   background-color: white;
   background-image: url('../../assets/images/austin.png');
   background-position: center;
@@ -21,14 +21,14 @@
   margin-top: 25px;
 }
 
-.Profile .name {
+.name {
   color: #91A8D0;
   font-family: 'Yeezy';
   font-size: 3vw;
   margin: 25px 0 0 0;
 }
 
-.Profile .header {
+.header {
   color: white;
   border-bottom: 5px solid #91A8D0;
   font-family: 'Yeezy';
@@ -37,15 +37,15 @@
   padding: 0 10px;
 }
 
-.Profile .email,
-.Profile .phone {
+.email,
+.phone {
   color: #707070;
   font-size: 1vw;
   font-weight: bold;
   margin: 15px 0 0 0;
 }
 
-.Profile button {
+.edit {
   color: #ACBEDC;
   background-color: white;
   border: 5px solid #ACBEDC;
@@ -59,12 +59,12 @@
   cursor: pointer;
 }
 
-.Profile button:hover {
+.edit:hover {
   color: white;
   background-color: #ACBEDC;
   border: 5px solid white;
 }
 
-.Profile button:focus {
+.edit:focus {
   outline: none;
 }
