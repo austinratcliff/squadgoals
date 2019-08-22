@@ -1,19 +1,19 @@
 import React from 'react'
-import './Nav.css'
+import styles from './Nav.module.css'
 
 const nav = props => {
   return (
-    <nav className="Nav">
+    <nav className={styles.Nav}>
       <h1
-        className="logo"
+        className={styles.logo}
         onClick={props.handleHomeClick}
       >SG</h1>
-      <ul className="links">
+      <ul className={styles.links}>
         <li
-          className="link"
+          className={styles.link}
           onClick={props.handleProfileClick}
         >Profile</li>
-        <li className="link">Log out</li>
+        <li className={styles.link}>Log out</li>
       </ul>
     </nav>
   )

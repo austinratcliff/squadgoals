@@ -5,28 +5,28 @@
   height: 100px;
 }
 
-.Nav .logo {
+.logo {
   font-size: 4vw;
 }
 
-.Nav .links {
+.links {
   margin-right: 25px;
 }
 
-.Nav .links .link {
+.link {
   font-size: 1.5vw;
   list-style-type: none;
 }
 
 .Nav,
-.Nav .links {
+.links {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.Nav .logo,
-.Nav .links .link {
+.logo,
+.link {
   color: white;
   font-family: 'Yeezy';
   margin-left: 25px;
