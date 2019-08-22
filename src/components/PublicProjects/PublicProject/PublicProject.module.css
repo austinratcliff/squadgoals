@@ -10,7 +10,7 @@
   margin-bottom: 25px;
 }
 
-.PublicProject .images {
+.images {
   float: left;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@
   width: 30%;
 }
 
-.PublicProject .images .first {
+.first {
   top: 0;
   left: 0;
   margin-top: 15px;
@@ -28,15 +28,15 @@
   z-index: 1;
 }
 
-.PublicProject .images .second {
+.second {
   bottom: 0;
   right: 0;
   margin-bottom: 15px;
   margin-right: 15px;
 }
 
-.PublicProject .images .first,
-.PublicProject .images .second {
+.first,
+.second {
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,36 +48,36 @@
   width: 60px;
 }
 
-.PublicProject:nth-child(even) .images .first {
+.PublicProject:nth-child(even) .first {
   background-image: url('../../../assets/images/austin.png');
 }
 
-.PublicProject:nth-child(even) .images .second {
+.PublicProject:nth-child(even) .second {
   background-image: url('../../../assets/images/tyle.png');
 }
 
-.PublicProject:nth-child(odd) .images .first {
+.PublicProject:nth-child(odd) .first {
   background-image: url('../../../assets/images/sierra.png');
 }
 
-.PublicProject:nth-child(odd) .images .second {
+.PublicProject:nth-child(odd) .second {
   background-image: url('../../../assets/images/krissy.png');
 }
 
-.PublicProject .details {
+.details {
   float: right;
   width: 70%;
   padding-right: 15px;
   box-sizing: border-box;
 }
 
-.PublicProject .details .name {
+.name {
   color: #91A8D0;
   font-family: 'Yeezy';
   font-size: 1.5vw;
 }
 
-.PublicProject .details .description {
+.description {
   color: #707070;
   font-size: 1vw;
   font-weight: bold;

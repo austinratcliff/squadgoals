@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
 import PublicProject from './PublicProject/PublicProject'
-import './PublicProjects.css'
+import styles from './PublicProjects.module.css'
 
 class PublicProjects extends Component {
   state = {
@@ -31,8 +31,8 @@ class PublicProjects extends Component {
     })
 
     return (
-      <div className="PublicProjects">
-        <h1 className="header">Projects at work</h1>
+      <div className={styles.PublicProjects}>
+        <h1 className={styles.header}>Projects at work</h1>
         {/* TODO: Remove multiples for production */}
         {publicProjects}
         {publicProjects}
