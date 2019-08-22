@@ -6,7 +6,6 @@
   align-items: center;
   height: calc(100vh - 100px);
   width: 30%;
-  transition: transform 0.5s;
 }
 
 .Profile .image {
@@ -68,8 +67,4 @@
 
 .Profile button:focus {
   outline: none;
-}
-
-.slide-left {
-  transform: translate(-100%);
 }

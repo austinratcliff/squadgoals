@@ -7,3 +7,83 @@
   text-align: center;
   overflow: hidden;
 }
+
+.content-enter {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.content-enter.content-enter-active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.content-leave {
+  opacity: 1;
+  visibility: visible;
+}
+
+.content-leave.content-leave-active {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.publicProjects-enter {
+  transform: translate(100%);
+}
+
+.publicProjects-enter.publicProjects-enter-active {
+  transform: none;
+  transition: transform 0.5s;
+}
+
+.publicProjects-leave {
+  transform: none;
+}
+
+.publicProjects-leave.publicProjects-leave-active {
+  transform: translate(100%);
+  transition: transform 0.5s;
+}
+
+.profile-enter {
+  transform: translate(-100%);
+}
+
+.profile-enter.profile-enter-active {
+  transform: none;
+  transition: transform 0.5s;
+}
+
+.profile-leave {
+  transform: none;
+}
+
+.profile-leave.profile-leave-active {
+  transform: translate(-100%);
+  transition: transform 0.5s;
+}
+
+.dashboard-enter {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dashboard-enter.dashboard-enter-active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.dashboard-leave {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dashboard-leave.dashboard-leave-active {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}

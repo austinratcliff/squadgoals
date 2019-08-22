@@ -7,7 +7,7 @@ import './Dashboard.css'
 
 const dashboard = props => {
   return (
-    <div className="Dashboard hide">
+    <div className="Dashboard">
       <Visions visions={props.visions} />
       <div className="tabs">
         <Goals goals={props.goals} />

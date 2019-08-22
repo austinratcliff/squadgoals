@@ -7,7 +7,6 @@
   height: calc(100vh - 100px);
   width: 30%;
   overflow: scroll;
-  transition: transform 0.5s;
 }
 
 .PublicProjects .header {
@@ -15,8 +14,4 @@
   font-family: 'Yeezy';
   font-size: 2vw;
   margin: 25px 0 0 0;
-}
-
-.slide-right {
-  transform: translate(100%);
 }

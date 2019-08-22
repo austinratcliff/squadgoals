@@ -3,7 +3,7 @@ import './Profile.css'
 
 const profile = props => {
   return (
-    <div className="Profile slide-left">
+    <div className="Profile">
       {/* TODO: Change to user image from API DB for production */}
       <div className="image"></div>
       <h1 className="name">{props.user.name}</h1>

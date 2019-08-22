@@ -1,19 +1,27 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
+import { CSSTransitionGroup } from 'react-transition-group'
 import Nav from '../../components/Nav/Nav'
-import Profile from '../../components/Profile/Profile'
 import Content from '../../components/Content/Content'
-import Dashboard from '../../components/Dashboard/Dashboard'
 import PublicProjects from '../../components/PublicProjects/PublicProjects'
+import Profile from '../../components/Profile/Profile'
+import Dashboard from '../../components/Dashboard/Dashboard'
 import './App.css'
 
 class App extends Component {
-  state = {
-    loggedInUser: {},
-    visions: [],
-    goals: [],
-    projects: [],
-    squad: []
+  constructor() {
+    super()
+    this.state = {
+      loggedInUser: {},
+      visions: [],
+      goals: [],
+      projects: [],
+      squad: [],
+      homePage: true,
+      profilePage: false
+    }
+    this.handleHomeClick = this.handleHomeClick.bind(this)
+    this.handleProfileClick = this.handleProfileClick.bind(this)
   }
 
   // TODO: Change to JWT and Knock for production
@@ -34,38 +42,79 @@ class App extends Component {
       })
   }
 
-  // TODO: Change to React CSS Transition Group for production
   handleHomeClick() {
-    document.querySelector('.Dashboard').classList.add('hide')
-    document.querySelector('.Profile').classList.add('slide-left')
-    document.querySelector('.Content').classList.remove('hide')
-    document.querySelector('.PublicProjects').classList.remove('slide-right')
+    this.setState({
+      homePage: true,
+      profilePage: false
+    })
   }
 
-  // TODO: Change to React CSS Transition Group for production
   handleProfileClick() {
-    document.querySelector('.Content').classList.add('hide')
-    document.querySelector('.PublicProjects').classList.add('slide-right')
-    document.querySelector('.Dashboard').classList.remove('hide')
-    document.querySelector('.Profile').classList.remove('slide-left')
+    this.setState({
+      homePage: false,
+      profilePage: true
+    })
   }
 
   render() {
+    let content
+    let publicProjects
+    let profile
+    let dashboard
+
+    if (this.state.homePage === true) {
+      content = <Content key="content" />
+      publicProjects = <PublicProjects key="publicProjects" />
+      profile = null
+      dashboard = null
+    }
+
+    if (this.state.profilePage === true) {
+      content = null
+      publicProjects = null
+      profile = <Profile
+        key="profile"
+        user={this.state.loggedInUser}
+      />
+      dashboard = <Dashboard
+        key="dashboard"
+        visions={this.state.visions}
+        goals={this.state.goals}
+        projects={this.state.projects}
+        squad={this.state.squad}
+      />
+    }
+
     return (
       <div className="App">
         <Nav
           handleHomeClick={this.handleHomeClick}
           handleProfileClick={this.handleProfileClick}
         />
-        <Profile user={this.state.loggedInUser} />
-        <Content />
-        <Dashboard
-          visions={this.state.visions}
-          goals={this.state.goals}
-          projects={this.state.projects}
-          squad={this.state.squad}
-        />
-        <PublicProjects />
+        <CSSTransitionGroup
+          transitionName="content"
+          transitionEnterTimeout={200}
+          transitionLeaveTimeout={200}>
+          {content}
+        </CSSTransitionGroup>
+        <CSSTransitionGroup
+          transitionName="publicProjects"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={500}>
+          {publicProjects}
+        </CSSTransitionGroup>
+        <CSSTransitionGroup
+          transitionName="profile"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={500}>
+          {profile}
+        </CSSTransitionGroup>
+        <CSSTransitionGroup
+          transitionName="dashboard"
+          transitionEnterTimeout={200}
+          transitionLeaveTimeout={200}>
+          {dashboard}
+        </CSSTransitionGroup>
       </div>
     )
   }

@@ -7,7 +7,6 @@
   position: fixed;
   height: calc(100vh - 100px);
   width: 70%;
-  transition: opacity 0.2s, visibility 0.2s;
 }
 
 .Content .name {
@@ -26,9 +25,4 @@
   text-align: justify;
   line-height: 1.5em;
   width: 33%;
-}
-
-.hide {
-  opacity: 0;
-  visibility: hidden;
 }
