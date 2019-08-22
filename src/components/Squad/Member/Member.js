@@ -1,11 +1,11 @@
 import React from 'react'
-import './Member.css'
+import styles from './Member.module.css'
 
 const member = props => {
   return (
-    <div className="Member">
-      <div className="image"></div>
-      <p className="name">{props.member.name}</p>
+    <div className={styles.Member}>
+      <div className={styles.image}></div>
+      <p className={styles.name}>{props.member.name}</p>
     </div>
   )
 }

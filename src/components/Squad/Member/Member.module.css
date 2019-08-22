@@ -10,7 +10,7 @@
   margin-bottom: 25px;
 }
 
-.Member .image {
+.image {
   background-color: white;
   background-image: url('../../../assets/images/tyle.png');
   background-position: center;
@@ -23,7 +23,7 @@
   cursor: pointer;
 }
 
-.Member .name {
+.name {
   color: #C8D3E7;
   font-family: 'Yeezy';
   font-size: 1.5vw;
@@ -31,6 +31,6 @@
   cursor: pointer;
 }
 
-.Member .name:hover {
+.name:hover {
   color: #91A8D0;
 }

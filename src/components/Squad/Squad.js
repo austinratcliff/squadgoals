@@ -1,6 +1,6 @@
 import React from 'react'
 import Member from './Member/Member'
-import './Squad.css'
+import styles from './Squad.module.css'
 
 const squad = props => {
   const squad = props.squad.map(member => {
@@ -8,8 +8,8 @@ const squad = props => {
   })
 
   return (
-    <div className="Squad">
-      <h1 className="header">Squad</h1>
+    <div className={styles.Squad}>
+      <h1 className={styles.header}>Squad</h1>
       {/* TODO: Remove multiples for production */}
       {squad}
       {squad}
