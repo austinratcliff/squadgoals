@@ -1,6 +1,6 @@
 import React from 'react'
 import Vision from './Vision/Vision'
-import './Visions.css'
+import styles from './Visions.module.css'
 
 const visions = props => {
   const visions = props.visions.map(vision => {
@@ -8,8 +8,8 @@ const visions = props => {
   })
 
   return (
-    <div className="Visions">
-      <h1 className="header">Vision</h1>
+    <div className={styles.Visions}>
+      <h1 className={styles.header}>Vision</h1>
       {visions}
     </div>
   )
