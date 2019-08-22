@@ -1,6 +1,6 @@
 import React from 'react'
 import Project from './Project/Project'
-import './Projects.css'
+import styles from './Projects.module.css'
 
 const projects = props => {
   const projects = props.projects.map(project => {
@@ -8,8 +8,8 @@ const projects = props => {
   })
 
   return (
-    <div className="Projects">
-      <h1 className="header">Projects</h1>
+    <div className={styles.Projects}>
+      <h1 className={styles.header}>Projects</h1>
       {/* TODO: Remove multiples for production */}
       {projects}
       {projects}

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Project.css'
+import styles from './Project.module.css'
 
 const project = props => {
   // TODO: Change to check logged in user id for production
@@ -14,10 +14,10 @@ const project = props => {
   })
 
   return (
-    <div className="Project">
-      <p className="name">{props.project.name}</p>
-      <p className="description">{props.project.description}</p>
-      <p className="member">with <span>{member}</span></p>
+    <div className={styles.Project}>
+      <p className={styles.name}>{props.project.name}</p>
+      <p className={styles.description}>{props.project.description}</p>
+      <p className={styles.member}>with <span>{member}</span></p>
     </div>
   )
 }

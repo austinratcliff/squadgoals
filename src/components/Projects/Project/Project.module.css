@@ -21,31 +21,31 @@
   margin-bottom: 25px;
 }
 
-.Project .name {
+.name {
   color: #C8D3E7;
   font-family: 'Yeezy';
   font-size: 1.5vw;
   margin: 0 0 10px 0;
 }
 
-.Project .description {
+.description {
   color: #707070;
   font-size: 1vw;
   font-weight: bold;
   margin: 0 0 10px 0;
 }
 
-.Project .member {
+.member {
   color: #707070;
   font-size: 1vw;
   font-weight: bold;
   margin: 0;
 }
 
-.Project .member span {
+.member span {
   color: #91A8D0;
 }
 
-.Project .member span:hover {
+.member span:hover {
   color: #C8D3E7;
 }
