@@ -6,7 +6,8 @@ import Content from '../../components/Content/Content'
 import PublicProjects from '../../components/PublicProjects/PublicProjects'
 import Profile from '../../components/Profile/Profile'
 import Dashboard from '../../components/Dashboard/Dashboard'
-import './App.css'
+import styles from './App.module.css'
+import './AppTransitionClasses.css'
 
 class App extends Component {
   constructor() {
@@ -86,7 +87,7 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
+      <div className={styles.App}>
         <Nav
           handleHomeClick={this.handleHomeClick}
           handleProfileClick={this.handleProfileClick}

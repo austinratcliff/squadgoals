@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'Yeezy';
-  src: url('../../assets/fonts/yeezy.woff');
-}
-
-.App {
-  text-align: center;
-  overflow: hidden;
-}
-
 .content-enter {
   opacity: 0;
   visibility: hidden;
