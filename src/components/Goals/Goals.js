@@ -1,6 +1,6 @@
 import React from 'react'
 import Goal from './Goal/Goal'
-import './Goals.css'
+import styles from './Goals.module.css'
 
 const goals = props => {
   const goals = props.goals.map(goal => {
@@ -8,8 +8,8 @@ const goals = props => {
   })
 
   return (
-    <div className="Goals">
-      <h1 className="header">Goals</h1>
+    <div className={styles.Goals}>
+      <h1 className={styles.header}>Goals</h1>
       {/* TODO: Remove multiples for production */}
       {goals}
       {goals}

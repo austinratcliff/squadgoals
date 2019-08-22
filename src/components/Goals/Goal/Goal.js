@@ -1,5 +1,5 @@
 import React from 'react'
-import './Goal.css'
+import styles from './Goal.module.css'
 
 const goal = props => {
   // TODO: Change to Moment.js for production
@@ -10,15 +10,15 @@ const goal = props => {
   const date = month + '/' + day + '/' + year
 
   const tags = props.goal.tags.map(tag => {
-    return <p key={tag.id} className="tag">{tag.name}</p>
+    return <p key={tag.id} className={styles.tag}>{tag.name}</p>
   })
 
   return (
-    <div className="Goal">
-      <p className="category">{props.goal.category.name}</p>
-      <div className="details">
-        <p className="content">{props.goal.content}</p>
-        <p className="byWhen">by {date}</p>
+    <div className={styles.Goal}>
+      <p className={styles.category}>{props.goal.category.name}</p>
+      <div className={styles.details}>
+        <p className={styles.content}>{props.goal.content}</p>
+        <p className={styles.byWhen}>by {date}</p>
         {tags}
       </div>
     </div>

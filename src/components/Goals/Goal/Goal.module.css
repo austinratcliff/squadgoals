@@ -20,7 +20,7 @@
   margin-bottom: 25px;
 }
 
-.Goal .category {
+.category {
   color: #91A8D0;
   font-family: 'Yeezy';
   font-size: 1.5vw;
@@ -28,7 +28,7 @@
   transform: rotate(270deg);
 }
 
-.Goal .details {
+.details {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,14 +37,14 @@
   padding-right: 25px;
 }
 
-.Goal .content {
+.content {
   color: #C8D3E7;
   font-family: 'Yeezy';
   font-size: 1.5vw;
   margin: 0 0 10px 0;
 }
 
-.Goal .byWhen {
+.byWhen {
   color: #707070;
   font-size: 1vw;
   font-weight: bold;
@@ -52,7 +52,7 @@
 }
 
 /* TODO: Add styles for multiple tags */
-.Goal .tag {
+.tag {
   color: white;
   background-color: #91A8D0;
   border-radius: 25px;
@@ -64,6 +64,6 @@
   padding: 10px 5px;
 }
 
-.Goal .tag:hover {
+.tag:hover {
   background: #C8D3E7;
 }
